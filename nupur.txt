@@ -1,0 +1,26 @@
+"{^[a-z A-Z.]{1,} $}"-name validation
+
+validate phone:
+long phone=sc.nextLong();
+"{^\\d{10}$}"
+
+validate email:
+{^[a-z]{1}[a-z 0-9_.]{1,}@gmail.com$}
+
+
+validate city:
+"{^[a-z A-Z]+ $}"
+
+validate gender:
+String gender=next().trim().toLowercase();
+if("male".equals(gender) || "female".equals(gender)) {
+}
+else {
+throw new(exception);
+}
+
+
+
+
+validate salary:
+"{^\\d+[.]{1}[0-9]{2}$}"
